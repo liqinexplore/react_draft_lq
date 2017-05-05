@@ -7,9 +7,9 @@ An open source react rich-text editor ( mordern react editor includes media supp
 
 [react_draft_lq](https://qingege.github.io/)
 
-Disabled media insert feature on demo page, because of there was no online API support for the time being, here is [The server side API demo in java](https://github.com/leejaen/react-lz-editor/blob/master/java_demo/getQiniuUptoken.java) you may want.
+Disabled media insert feature on demo page, because of there was no online API support for the time being, here is [The server side API demo in java](https://github.com/qingege/react_draft_lq/blob/master/java_demo/getQiniuUptoken.java) you may want.
 
-因为上传图片视频多媒体等文件需要后端服务器接口配合，这部分暂时没有实现在线demo接口，所以暂时通过配置去掉了，java版本接口实现示例请参考[示例代码](https://github.com/leejaen/react-lz-editor/blob/master/java_demo/getQiniuUptoken.java)。
+因为上传图片视频多媒体等文件需要后端服务器接口配合，这部分暂时没有实现在线demo接口，所以暂时通过配置去掉了，java版本接口实现示例请参考[示例代码](https://github.com/qingege/react_draft_lq/blob/master/java_demo/getQiniuUptoken.java)。
 
 # Install
 
@@ -27,7 +27,7 @@ Version note: React 15.4.2+ and react-dom 15.4.2+ is required. Antd version at l
   ``` js
   import React from 'react';
   import ReactDOM from 'react-dom';
-  import LzEditor from 'react-lz-editor'
+  import LqEditor from 'react_draft_lq'
   class Test extends React.Component {
     constructor(props) {
       super(props);
@@ -72,7 +72,7 @@ Version note: React 15.4.2+ and react-dom 15.4.2+ is required. Antd version at l
         QINIU_DOMAIN_VIDEO_URL: "https://video.yourServerAddress.mobi", //视频文件地址的前缀
         QINIU_DOMAIN_FILE_URL: "https://static.yourServerAddress.com/", //其他文件地址前缀
       }
-      return <LzEditor
+      return <LqEditor
         active={true}
         importContent={this.state.content}
         cbReceiver={this.receiveHtml}
